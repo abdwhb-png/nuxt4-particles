@@ -43,7 +43,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     // noinspection JSIgnoredPromiseFromCall
     addComponent({
-      name: "Nuxt4Particles",
+      name: "NuxtParticles",
       filePath: resolver.resolve("./runtime/components/NuxtParticles.vue"),
     });
   },
