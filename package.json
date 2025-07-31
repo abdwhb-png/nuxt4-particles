@@ -1,8 +1,11 @@
 {
-  "name": "nuxt4-particles",
+  "name": "@yourdevlab/nuxt4-particles",
   "version": "0.4.1",
   "description": "Run lightweight, heavily customizable particle simulations in your Nuxt project with tsParticles.",
-  "repository": "yourdevlab/nuxt4-particles",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdwhb-png/nuxt4-particles.git"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {

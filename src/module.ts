@@ -13,8 +13,8 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: "nuxt-particles",
-    configKey: "particles",
+    name: "nuxt4-particles",
+    configKey: "particles4",
     compatibility: {
       nuxt: ">=3.7.0",
     },
@@ -44,7 +44,7 @@ export default defineNuxtModule<ModuleOptions>({
     // noinspection JSIgnoredPromiseFromCall
     addComponent({
       name: "Nuxt4Particles",
-      filePath: resolver.resolve("./runtime/components/NuxtParticles.vue"),
+      filePath: resolver.resolve("./runtime/components/Nuxt4Particles.vue"),
     });
   },
 });
