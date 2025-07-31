@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.4.2
+
+[compare changes](https://github.com/abdwhb-png/nuxt4-particles/compare/v0.4.1...v0.4.2)
+
+### 🩹 Fixes
+
+- Update package name and repository structure; add Nuxt4Particles component ([4bd460e](https://github.com/abdwhb-png/nuxt4-particles/commit/4bd460e))
+
+### ❤️ Contributors
+
+- Abd Whb <winnerk088@gmail.com>
+
 ## v0.4.1
 
 

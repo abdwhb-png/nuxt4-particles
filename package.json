@@ -1,6 +1,6 @@
 {
   "name": "@yourdevlab/nuxt4-particles",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Run lightweight, heavily customizable particle simulations in your Nuxt project with tsParticles.",
   "repository": {
     "type": "git",
