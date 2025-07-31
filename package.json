@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-particles",
+  "name": "nuxt4-particles",
   "version": "0.3.0",
   "description": "Run lightweight, heavily customizable particle simulations in your Nuxt project with tsParticles.",
-  "repository": "Joepocalyptic/nuxt-particles",
+  "repository": "abdwhb/nuxt4-particles",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -20,7 +20,7 @@
     "particlesjs",
     "particles-js",
     "nuxt particles",
-    "nuxt-particles",
+    "nuxt4-particles",
     "nuxt-module",
     "nuxt3",
     "confetti",
@@ -42,11 +42,11 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.11.1",
-    "defu": "^6.1.4",
-    "tsparticles": "^3.3.0",
     "@tsparticles/basic": "^3.3.0",
     "@tsparticles/engine": "^3.3.0",
-    "@tsparticles/slim": "^3.3.0"
+    "@tsparticles/slim": "^3.3.0",
+    "defu": "^6.1.4",
+    "tsparticles": "^3.3.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -54,7 +54,7 @@
     "@nuxt/module-builder": "^0.5.5",
     "@nuxt/schema": "^3.11.1",
     "@nuxt/test-utils": "^3.12.0",
-    "@types/node": "^18.18.4",
+    "@types/node": "^20.19.9",
     "changelogen": "^0.5.5",
     "eslint": "^8.57.0",
     "nuxt": "^3.11.1",
