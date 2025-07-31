@@ -1,42 +1,50 @@
-import {defineNuxtModule, addPlugin, createResolver, addComponent} from '@nuxt/kit'
-import defu from 'defu'
+import {
+  defineNuxtModule,
+  addPlugin,
+  createResolver,
+  addComponent,
+} from "@nuxt/kit";
+import defu from "defu";
 
 export interface ModuleOptions {
-  mode: 'full' | 'slim' | 'basic' | 'custom'
-  lazy: boolean
+  mode: "full" | "slim" | "basic" | "custom";
+  lazy: boolean;
 }
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-particles',
-    configKey: 'particles',
+    name: "nuxt-particles",
+    configKey: "particles",
     compatibility: {
-      nuxt: "^3.7.0"
-    }
+      nuxt: ">=3.7.0",
+    },
   },
   // Default configuration options of the Nuxt module
   defaults: {
-    mode: 'full',
-    lazy: true
+    mode: "full",
+    lazy: true,
   },
-  setup (options, nuxt) {
-    const resolver = createResolver(import.meta.url)
+  setup(options, nuxt) {
+    const resolver = createResolver(import.meta.url);
 
-    if(!options.lazy && options.mode !== 'custom') {
-      addPlugin(resolver.resolve('./runtime/plugins/particle-loader.client'))
+    if (!options.lazy && options.mode !== "custom") {
+      addPlugin(resolver.resolve("./runtime/plugins/particle-loader.client"));
     }
 
-    nuxt.options.runtimeConfig.public = defu(nuxt.options.runtimeConfig.public || {}, {
-      particles: {
-        mode: options.mode,
-        lazy: options.lazy
+    nuxt.options.runtimeConfig.public = defu(
+      nuxt.options.runtimeConfig.public || {},
+      {
+        particles: {
+          mode: options.mode,
+          lazy: options.lazy,
+        },
       }
-    })
+    );
 
     // noinspection JSIgnoredPromiseFromCall
     addComponent({
-      name: 'NuxtParticles',
-      filePath: resolver.resolve('./runtime/components/NuxtParticles.vue')
-    })
-  }
-})
+      name: "Nuxt4Particles",
+      filePath: resolver.resolve("./runtime/components/NuxtParticles.vue"),
+    });
+  },
+});
