@@ -1,8 +1,8 @@
 {
   "name": "nuxt4-particles",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "description": "Run lightweight, heavily customizable particle simulations in your Nuxt project with tsParticles.",
-  "repository": "abdwhb/nuxt4-particles",
+  "repository": "yourdevlab/nuxt4-particles",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -37,7 +37,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
-    "release": "pnpm run prepack && changelogen --release --push && pnpm publish",
+    "release": "npm run prepack && changelogen --release --push && npm publish",
     "lint": "eslint ."
   },
   "dependencies": {
